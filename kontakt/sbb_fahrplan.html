@@ -1,0 +1,114 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/css/sbb_fahrplan.css">
+</head>
+  
+  <script>
+    window.onload = function() {
+      var month = new Array("01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12");
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth();
+      var currentMonth = month[mm];
+      var yyyy = today.getFullYear();
+      var hh = String(today.getHours()).padStart(2, '0');
+      var min = String(today.getMinutes()).padStart(2, '0');
+      //today = dd + '.' + currentMonth + '.' + yyyy;
+      if(dd < 10){
+        dd = "0" + dd;
+      }
+      today = yyyy + '-' + currentMonth + '-' + dd;
+      time = hh + ':' + min;
+      document.getElementById('date').value = today;
+      document.getElementById('time').value = time;
+    }
+
+    function callSBB() {
+      let sbbfrom = document.getElementById('from').value;
+      let sbbto = document.getElementById('to').value;
+      let sbbdate = document.getElementById('date').value;
+      let sbbtime = document.getElementById('time').value;
+      let arrival = "";
+      if(document.getElementById('departure').checked) {
+        arrival = "false";
+      }else if(document.getElementById('arrival').checked) {
+        arrival = "true";
+      }
+      var sbbdate_new_format = new Date(sbbdate);
+      var month = new Array("01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12");
+      var dd_sbb = sbbdate_new_format.getDate();
+      var mm_sbb = sbbdate_new_format.getMonth();
+      var currentMonth_sbb = month[mm_sbb];
+      var yyyy_sbb = sbbdate_new_format.getFullYear();
+
+      sbbdate_new = dd_sbb + '.' + currentMonth_sbb + '.' + yyyy_sbb;
+      let url = `https://www.sbb.ch/de?von=${sbbfrom}&nach=${sbbto}&datum=${sbbdate_new}&zeit=${sbbtime}&an=${arrival}&suche=true`;
+      window.open(url, '_blank');
+    }
+  </script>
+  <body class="sbb_fahrplan_form">
+    <div class="sbb_logo_div">
+      <img alt="sbb logo" src="Extension.svg" class="sbb_logo">
+    </div>
+    <form onsubmit="callSBB()" action="" id="sbbapp">
+      <div class="sbb_input_label_div">
+        <input type="text" name="from" id="from" class="sbb_input sbb_input_text" placeholder=" ">
+        <label for="from" class="sbb_label sbb_label_text">Von:</label>
+      </div>
+      <div class="sbb_input_label_div">
+        <select name="to" id="to" class="sbb_input">
+          <option value="Bäretswil, Bahnhof">Bäretswil, Bahnhof</option>
+          <option value="Bäretswil, Gemeindehaus">Bäretswil, Gemeindehaus</option>
+        </select>
+        <label for="to" class="sbb_label">Nach:</label>
+      </div>
+      <div class="sbb_input_date_time">
+        <div class="sbb_input_label_div sbb_div_date">
+          <input type="date" name="date" id="date" class="sbb_input sbb_input_time_date">
+          <label for="date" class="sbb_label">Datum:</label>
+        </div>
+        <div class="sbb_input_label_div sbb_div_time">
+          <input type="time" name="time" id="time" class="sbb_input sbb_input_time_date">
+          <label for="time" class="sbb_label">Zeit:</label>
+        </div>
+        <div class="sbb_checkbox_arrival_div">
+          <div class="sbb_checkbox_label_div">
+            <input type="checkbox" name="departure" id="departure" class="sbb_checkbox_arrival" checked onchange="toggle_checkboxes('departure')">
+            <label for="departure" class="sbb_label_arrival">Ab</label>
+          </div>
+          <div class="sbb_checkbox_label_div">
+            <input type="checkbox" name="arrival" id="arrival" class="sbb_checkbox_arrival" onchange="toggle_checkboxes('arrival')">
+            <label for="arrival" class="sbb_label_arrival">An</label>
+          </div>
+        </div>
+        <button type="submit" class="sbb_submit_button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>Suchen</button>
+      </div>
+    </form>
+    <script>
+      function toggle_checkboxes(clickedId) {
+        const departure = document.getElementById('departure');
+        const arrival = document.getElementById('arrival');
+
+        if (clickedId === 'departure') {
+          // Wenn departure bereits aktiv ist, verhindere das Deaktivieren
+          if (departure.checked && !arrival.checked) {
+            // Checkbox zurücksetzen auf aktiv
+            departure.checked = true;
+            return;
+          }
+          departure.checked = true;
+          arrival.checked = false;
+        }
+      
+        if (clickedId === 'arrival') {
+          if (arrival.checked && !departure.checked) {
+            arrival.checked = true;
+            return;
+          }
+          arrival.checked = true;
+          departure.checked = false;
+        }
+      }
+    </script>
+  </body>
+</html>

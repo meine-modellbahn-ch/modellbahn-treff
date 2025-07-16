@@ -1,0 +1,125 @@
+.sponsoren_main_div{
+    display: flex;
+    flex-wrap: wrap; /* <-- wichtig für den Umbruch */
+    gap: 20px;
+}
+.sponsor_div{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(227, 227, 227);
+    min-width: 250px;
+    width: calc(33% - 10px);
+    height: 300px;
+    border-radius: 30px;
+}
+.sponsor_logo_div{
+    margin: 10px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.sponsor_logo{
+    width: 100%;
+}
+.sponsor_text{
+    padding: 0 30px 10px 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+.weitere_sponsoren_text{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+.paiment_div{
+    display: flex;
+    border-radius: 30px;
+    height: 400px;
+}
+.twint_div{
+    width: 300px;
+    margin: 0 20px 0 0;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}
+.twint_qr{
+    background-color: gray;
+    width: calc(100% - 40px);
+    margin: 20px;
+}
+.twint_logo{
+    background-color: black;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin: 0 20px 20px 20px;
+}
+.text_div{
+    width: calc(100% - 320px - 420px);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light_blue_50);
+    border-radius: 30px;
+    padding: 0 20px;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 20px 0 0;
+}
+.pay_icon{
+    height: 30px;
+    width: 30px;
+    fill: var(--dark_blue);
+    margin: 0 10px 0 0;
+}
+.iban_text{
+    display: flex;
+    align-items: center;
+}
+.iban_person_text{
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+}
+.pay_button_div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 0 20px 0;
+}
+.materialspende_div{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark_blue);
+    border-radius: 30px;
+    padding: 0 20px;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.materialspende_icon{
+    height: 100px;
+    width: 100px;
+    fill: var(--light_blue);
+}
+.materialspende_text{
+    color: white;
+}
+
+@media only screen and (min-width: 1921px) {
+    .sponsor_div{
+        width: calc(25% - 15px);
+    }
+}

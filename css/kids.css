@@ -1,0 +1,200 @@
+.phone_info{
+    background-color: var(--light_blue_50);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    height: 570px;
+    justify-content: flex-end;
+}
+.phone_control{
+    background-color: var(--dark_blue);
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px 50px 20px 20px;
+    display: flex;
+    align-items: end;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    margin-top: 200px;
+}
+.phone_info_titel{
+    margin-left: 20px;
+    font-size: 50px;
+}
+.text_phone_control{
+    margin: 0 100px 0 10px;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+.text_phone_control h1{
+    margin: 0 0 0 0;
+    font-size: 50px;
+}
+.text_phone_control p{
+    margin: 20px 0 0 0;
+    font-size: 20px;
+}
+.phone_control img{
+    height: 500px;
+    filter: drop-shadow(0 20px 20px var(--dark_blue_50));
+    z-index: 1;
+    margin-bottom: 20px;
+}
+.z21_div{
+    background-color: var(--light_blue);
+    position: fixed;
+    width: 40vw;
+    padding: 20px;
+    margin: 0 0 -20px -20px;
+    border-radius: 0 0 20px 20px;
+    height: 100px;
+    display: flex;
+}
+.z21_div img{
+    height: 100%;
+    filter: none;
+    border-radius: 10px;
+}
+.z21_text_div{
+    font-family: "Roboto", sans-serif;
+}
+.z21_titel{
+    font-size: 30px;
+    margin: 0 0 0 30px;
+}
+.z21_text{
+    font-size: 20px;
+    margin: 0 0 0 30px;
+}
+.text_img_left{
+    width: 100%;
+    display: flex;
+    background-color: var(--dark_blue_50);
+    height: 500px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.text_img_right{
+    width: 100%;
+    display: flex;
+    background-color: var(--dark_blue_50);
+    height: 500px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    flex-direction: row-reverse;
+}
+.text_img_left img, .text_img_right img{
+    height: 100%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+}
+.text_img_right img{
+    border-radius: 0 20px 20px 0;
+}
+.text_img_left img{
+    border-radius: 20px 0 0 20px;
+}
+.text_img_left .text_div, .text_img_right .text_div{
+    padding: 25px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text_img_left .text_div .titel, .text_img_right .text_div .titel{
+    margin: 0 0 0 0;
+    font-size: 50px;
+    font-weight: 700;
+}
+.text_img_left .text_div .text, .text_img_right .text_div .text{
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.two_infos{
+    display: grid;
+    grid-template-columns: 46% 46%;
+    gap: 8%;
+    padding: 50px;
+    background-color: var(--three_info_background);
+    border-radius: 20px;
+}
+.info{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--info_background);
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+}
+.info_titel{
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--info_titel_color);
+}
+.info_text{
+    font-size: 20px;
+    font-weight: 350;
+    text-align: center;
+    width: 90%;
+    color: var(--info_text_color);
+}
+.info_button{
+    background-color: var(--button_background_light);
+    color: var(--button_text_light);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+}
+.info_button:hover{
+    background-color: var(--button_background_light_hover);
+    cursor: pointer;
+}
+.zeit_tabelle{
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.zeit_tabelle th, .zeit_tabelle td {
+  padding: 8px 12px;
+  border: 1px solid var(--mid_gray);
+  border-radius: 20px;
+  text-align: left;
+}
+.zeit_tabelle th {
+  background-color: var(--light_gray);
+}
+.zeit_tabelle td {
+  padding-right: 50px;
+}
+.schnupper_formular{
+    background-color: var(--light_gray);
+    padding: 20px;
+    border-radius: 30px;
+}
+.schnupper_formular h3{
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+.schnupper_formular .row{
+    display: flex;
+}
+.input_label_div{
+    margin: 0 50px 10px 0;
+}
+.checkbox_label_div{
+    margin-bottom: 10px;
+}
+.row textarea{
+    width: 770px;
+    height: 200px;
+}
+.schnupper_formular button{
+    margin-top: 20px;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modellbahn-Treff | Kids</title>
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/kids.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <header id="header"></header>
+    <script>$("#header").load("/header.html");</script>
+    <main>
+        <h1>Kids</h1>
+        <div class="text_img_left">
+            <img src="/img/image_kids.jpg" alt="">
+            <div class="text_div">
+                <p class="titel">Interesse an der Modellbahn?</p>
+                <p class="text">Bist du im Alter von 8-15 Jahren, hast Interesse an handwerklichem Arbeiten und interessierst dich für die Modellbahn, dann schau doch mal bei uns vorbei. <br>
+                    Gemeinsam mit anderen Kinder aus der Region bauen wir an unserer grossen Spur N Anlage. <br><br>
+                    Nebst dem Fahren mit den Zügen, kannst du: <br>
+                    Häuser bauen, Landschaft gestallten, die Zugsicherung verkabeln und noch vieles mehr. <br><br>
+                    Es gibt für jeden eine passende Aufgabe.</p>
+            </div>
+        </div>
+        <div class="phone_info">
+            <!-- <h1 class="phone_info_titel">Handy Steuerung</h1> -->
+            <div class="phone_control">
+                <div class="text_phone_control">
+                    <h1>Handy Steuerung</h1>
+                    <p> Unsere Züge steuern wir mit einer App auf dem iPhone. Wenn du ein eigenes iPhone hast, kannst du bereits die Z21 App installieren. <br>
+                        Wenn du kein iPhone hast ist das kein Problem, wir haben mehrere bei uns die du Verwenden kannst. <br><br>
+                        Wir haben kein WLAN das mit dem Internet verbunden ist.</p>
+                </div>
+                <img src="/img/titelbildmitiphone.png" alt="">
+            </div>
+        </div>
+        <div class="text_img_left">
+            <img src="/img/image_anlage.jpg" alt="">
+            <div class="text_div">
+                <p class="titel">Unsere Anlage</p>
+                <p class="text">Auf einer Fläche von <b>60m2</b> entsteht eine grosse Modellbahn in Spur N. <br>
+                Wir haben über <b>100 Züge, ca. 120 Wichen und ca. 500 Meter Gleise</b>. <br>
+                Eine Rundfahrt dauert um die 15 Minuten. <br></p>
+                <button class="regular_button_light" onclick="window.location = '/unsere-anlage/'">Weiters zu unserer Anlage</button>
+            </div>
+        </div>
+
+        <div class="text_img_right">
+            <img src="/img/history.avif" alt="">
+            <div class="text_div">
+                <p class="titel">Geschichte</p>
+                <p class="text">Möchtest du mehr über unsere spannende Geschichte erfahren und wie wir 2017 mit drei Jungs das Projekt "Modellbahn Treff for Kids" gestartet haben? <br>
+                    Du findest weitere Spannende Infos im Tap "Über uns"</p>
+                <button class="regular_button_light" onclick="window.location = '/ueber-uns/'" id="ref_pint_schnuppern">Über uns</button>
+            </div>
+        </div>
+        <h2>Wann treffen wir uns?</h2>
+        <table class="zeit_tabelle">
+            <tr>
+                <th>Montag</th>
+                <td>16:00 - 19:00 Uhr</td>
+            </tr>
+            <tr>
+                <th>Dienstag</th>
+                <td>zur Zeit keine Gruppe</td>
+            </tr>
+            <tr>
+                <th>Mittwoch</th>
+                <td>14:00 - 18:30 Uhr</td>
+            </tr>
+            <tr>
+                <th>Donnerstag</th>
+                <td>16:30 - 19:00 Uhr</td>
+            </tr>
+            <tr>
+                <th>Freitag</th>
+                <td>16:00 - 19:00 Uhr</td>
+            </tr>
+            <tr>
+                <th>Samstag</th>
+                <td>13:30 - 18:00 Uhr</td>
+            </tr>
+        </table>
+        <h2>Interessiert? - Melde dich für einen Schnupper-Nachmittag an</h2>
+        <form action="" method="post" class="schnupper_formular" required>
+            <h3>Kind</h3>
+            <div class="row">
+                <div class="input_label_div">
+                    <input type="text" name="firstname" id="firstname" required>
+                    <label for="firstname">Vorname</label>
+                </div>
+                <div class="input_label_div">
+                    <input type="text" name="lastname" id="lastname" required>
+                    <label for="lastname">Nachname</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input_label_div">
+                    <input type="text" name="age" id="age" required>
+                    <label for="age">Alter</label>
+                </div>
+            </div>
+            <h3>Wohnort</h3>
+            <div class="row">
+                <div class="input_label_div">
+                    <input type="text" name="plz" id="plz" required>
+                    <label for="plz">PLZ</label>
+                </div>
+                <div class="input_label_div">
+                    <input type="text" name="location" id="location" required>
+                    <label for="location">Ort</label>
+                </div>
+            </div>
+            <h3>Kontaktperson</h3>
+            <div class="row">
+                <div class="input_label_div">
+                    <input type="text" name="firstname_contact" id="firstname_contact" required>
+                    <label for="firstname_contact">Vorname</label>
+                </div>
+                <div class="input_label_div">
+                    <input type="text" name="lastname_contact" id="lastname_contact" required>
+                    <label for="lastname_contact">Nachname</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input_label_div">
+                    <input type="email" name="email_contact" id="email_contact" required>
+                    <label for="email_contact">Email</label>
+                </div>
+                <div class="input_label_div">
+                    <input type="tel" name="tel_contact" id="tel_contact" required>
+                    <label for="tel_contact">Telefon</label>
+                </div>
+            </div>
+            <h3>Mögliche Wochentage</h3>
+            <div class="checkbox_label_div">
+                <label for="montag">Montag (16:00 - 19:00 Uhr)</label>
+                <input type="checkbox" name="montag" id="montag">
+            </div>
+            <div class="checkbox_label_div">
+                <label for="dienstag">Dienstag (zur Zeit keine Gruppe)</label>
+                <input type="checkbox" name="dienstag" id="dienstag" disabled>
+            </div>
+            <div class="checkbox_label_div">
+                <label for="mittwoch">Mittwoch (14:00 - 18:30 Uhr)</label>
+                <input type="checkbox" name="mittwoch" id="mittwoch">
+            </div>
+            <div class="checkbox_label_div">
+                <label for="donnerstag">Donnerstag (16:30 - 19:00 Uhr)</label>
+                <input type="checkbox" name="donnerstag" id="donnerstag">
+            </div>
+            <div class="checkbox_label_div">
+                <label for="freitag">Freitag (16:00 - 19:00 Uhr)</label>
+                <input type="checkbox" name="freitag" id="freitag">
+            </div>
+            <div class="checkbox_label_div">
+                <label for="samstag">Samstag (13:30 - 18:00 Uhr)</label>
+                <input type="checkbox" name="samstag" id="samstag">
+            </div>
+            <h3>Bemerkungen</h3>
+            <label for="bemerkungen"></label>
+            <div class="row">
+                <textarea name="bemerkungen" id="bemerkungen" rows="5"></textarea>
+            </div>
+            <button class="regular_button_light">Anfragen</button>
+        </form>
+        <script src="/js/tel-num.js"></script>
+
+        <!--<div class="two_infos">
+            <div class="info">
+                <p class="info_titel">Interessiert?</p>
+                <p class="info_text">Bist du an einem Schnuppertag im Modellbahn-Treff Interessiert? <br>
+                Dann findest du weitere Infos hier. <br><br>
+                Wir freuen uns auf dein Besuch!</p>
+                <button class="info_button">Schnuppern</button>
+            </div>
+            <div class="info">
+                <p class="info_titel">Möchtest du noch Weiteres über uns wissen?</p>
+                <p class="info_text">Möchtest du wissen wer alles in unserem Team ist, oder wie wir entstanden sind? <br>
+                Weitere Infos findest du im Tap über uns.</p>
+                <button class="info_button">Über uns</button>
+            </div>
+        </div>-->
+    </main>
+    <footer id="footer"></footer>
+    <script>$("#footer").load("/footer.html");</script>
+</body>
+</html>

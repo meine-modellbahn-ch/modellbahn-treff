@@ -1,0 +1,136 @@
+.main_contact_div{
+    background-color: var(--dark_blue_50);
+    display: flex;
+    height: 550px;
+    border-radius: 30px;
+}
+.splitt_contact_div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact_maps_div{
+    width: 60%;
+}
+.contact_maps_div .maps{
+    margin: 0;
+    width: 100%;
+    height: 510px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgb(227, 227, 227);
+}
+.contact_text_div{
+    margin: 20px 20px 20px 50px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact_icon_text_div{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 5px;
+}
+.contact_icon_text_div:first-child{
+    align-items: flex-start;
+}
+.contact_icon_text_div svg{
+    height: 30px;
+    width: 30px;
+    fill: white;
+}
+.contact_icon_text_div .contact_text{
+    display: flex;
+    margin-left: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+.contact_icon_text_div .contact_text a{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.contact_icon_text_div .contact_text a:hover{
+    cursor: pointer;
+    color: var(--light_blue);
+}
+.social_icons{
+    width: 100%;
+}
+.social_items_titel{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px 0;
+}
+.icons{
+    width: 100%;
+    display: flex;
+}
+.icon{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+.icon img{
+    width: 100%;
+}
+.anfahrt{
+    margin-top: 50px;
+    background-color: var(--light_blue_50);
+    border-radius: 30px;
+    padding: 20px;
+}
+.anfahrt_titel{
+    margin: 0;
+}
+.anfahrt_titel h1{
+    margin: 0 0 20px 0;
+}
+.anfahrt_maps_text{
+    display: flex;
+}
+.anfahrt_map{
+    width: 59%;
+    height: 550px;
+    border: none;
+    border-radius: 10px;
+}
+.anfahrt_text_div{
+    width: 40%;
+    padding: 0 0 0 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.anfahrt_text_ueberschrift{
+    margin: 0;
+    font-weight: 700;
+}
+.anfahrt_text{
+    margin: 5px 0 20px 0;
+}
+.anfahrt_text mark{
+    background-color: transparent;
+    color: red;
+    font-weight: 500;
+}
+.sbb_fahrplan{
+    width: 100%;
+    min-height: 262px;
+    height: 100%;
+    border-radius: 10px;
+}

@@ -1,0 +1,125 @@
+.sbb_fahrplan_form{
+    padding: 5px 5px 0 5px;
+    background-color: white;
+}
+.sbb_logo_div{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    margin: 0 0 10px 0;
+}
+.sbb_logo{
+    height: 100%;
+}
+.sbb_input_label_div{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 50px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.sbb_input_label_div{
+    border-bottom: 1px solid #151515;
+}
+.sbb_input{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+}
+.sbb_label{
+    font-family: "Roboto", sans-serif;
+    color: #686868;
+    margin-left: 3px;
+}
+.sbb_input_text{
+    height: 25px;
+    transition: height 0.3s;
+    outline: none;
+    border: none;
+}
+.sbb_input_text:placeholder-shown{
+    height: 0;
+}
+.sbb_label_text:hover{
+    cursor: text;
+}
+.sbb_label_text{
+    transition: font-size 0.3s;
+}
+.sbb_input_text:placeholder-shown + .sbb_label_text{
+    font-size: 20px;
+}
+.sbb_input_text:focus + .sbb_label_text{
+    font-size: 16px;
+}
+.sbb_input_text:focus{
+    height: 25px;
+    border: none;
+}
+.sbb_input_date_time{
+    display: flex;
+    justify-content: space-between;
+}
+.sbb_div_date{
+    min-width: 130px;
+    width: 25%;
+    max-width: 30%;
+    margin: 0 20px 0 0;
+}
+.sbb_div_time{
+    min-width: 90px;
+    width: 15%;
+    max-width: 30%;
+    margin: 0 20px 0 0;
+}
+.sbb_submit_button{
+    background-color: #EB0000;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: white;
+    white-space:nowrap;
+    border-radius: 25px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+.sbb_submit_button:hover{
+    cursor: pointer;
+}
+.sbb_checkbox_arrival{
+    display: none;
+}
+.sbb_checkbox_arrival_div{
+    background-color: #E5E5E5;
+    display: flex;
+    min-width: 100px;
+    width: 20%;
+    margin: 0 20px 0 0;
+    border-radius: 25px;
+}
+.sbb_checkbox_label_div{
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+.sbb_label_arrival{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    color: #686868;
+    width: 100%;
+    margin: 5px;
+}
+.sbb_checkbox_arrival:checked + .sbb_label_arrival{
+    background-color: #151515;
+    color: white;
+}
+.sbb_input option mark{
+    color: #686868;
+}

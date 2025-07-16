@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modellbahn-Treff for Kids</title>
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <header id="header"></header>
+    <script>$("#header").load("/header.html");</script>
+    <main>
+        <img src="/img/titel_img/home.jpg" alt="Home" class="titel_img">
+        <div class="page_titel">
+            Planen - Bauen - Fahren
+        </div>
+        <div class="titel_three_infos">
+            Infos
+        </div>
+        <div class="three_infos">
+            <div class="info">
+                <p class="info_titel">für Kinder</p>
+                <p class="info_text">Mit Zügen zu fahren ist überhaupt nicht uncool, denn du fährst mit deinem Smartphone!</p>
+                <button class="info_button" onclick="window.location = '/kids/'">Weitere Infos</button>
+            </div>
+            <div class="info">
+                <p class="info_titel">für Eltern</p>
+                <p class="info_text">Wie kann Ihr Kind vom Bau einer Modelleisenbahn profitieren?</p>
+                <button class="info_button" onclick="window.location = '/ueber-uns/'">Weitere Infos</button>
+            </div>
+            <div class="info">
+                <p class="info_titel">Galerie</p>
+                <p class="info_text">Hier  kannst du die Baufortschritte an unserer Modellbahn beobachten.</p>
+                <button class="info_button" onclick="window.location = '/galerie/'">zu der Galerie</button>
+            </div>
+        </div>
+        <div class="ueber_uns">
+            <p class="titel_ueber_uns">Über Uns</p>
+            <p class="text_ueber_uns">Bisher haben über 72 Kids an dem Jugendprojekt mitgewirkt. <br><br>
+                <b>Teamleiter:</b><br>
+                Ronald (1957) Bahn-Journalist und Jugendarbeiter, Vater von zwei erwachsenen Kindern<br>
+                Joni (2007), SBB-Lehrling Automatiker, Eric (2006), Gebäudeinformatiker-Lehrling, Florian (2006), Tiefbauplaner-Lehrling<br><br>
+                <b>Assistenzleiter:</b><br>Tim (2009), Laurens (2008) und Eljah (2011) erfahrene Modellbahner und langjährige MBT-Mitglieder<br><br>
+                und 65 weitere Kinder im Alter von 8-15 Jahren</p>
+        </div>
+        <div class="titel_three_infos"></div>
+        <div class="two_infos">
+            <div class="info">
+                <p class="info_titel">Interessiert?</p>
+                <p class="info_text">Bist du an einem Schnuppertag im Modellbahn-Treff Interessiert? <br>
+                Dann findest du weitere Infos hier. <br><br>
+                Wir freuen uns auf dein Besuch!</p>
+                <button class="info_button" onclick="window.location = '/schnuppern'">Schnuppern</button>
+            </div>
+            <div class="info">
+                <p class="info_titel">Möchten Sie uns unterstützen?</p>
+                <p class="info_text">Haben sie Fahrzeuge aus einer Samlung, die Sie loswerden wollen,<br> oder möchten Sie uns durch eine Material- oder Geldspende unterschtützen, <br>alle Informationen dazu finden Sie hier.</p>
+                <button class="info_button" onclick="window.location = '/sponsoren/#spenden'">Unterstützen</button>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <script>$("#footer").load("/footer.html");</script>
+</body>
+</html>

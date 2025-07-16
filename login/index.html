@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modellbahn-Treff for Kids</title>
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/presse.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <header id="header"></header>
+    <script>$("#header").load("/header.html");</script>
+    <main>
+        <div class="login_main_div">
+            <div class="optic_extend">
+                <button class="sso_button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-560q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm2 520L320-200l80-80-80-80 80-80v-14q-72-25-116-87t-44-139q0-100 70-170t170-70q100 0 170 70t70 170q0 81-46 141.5T560-454v334l-78 80Z"/></svg>SSO</button>
+            </div>
+            <div class="login_div_content">
+                <h1 class="login_titel">Login</h1>
+                <div class="login_inputs">
+                    <div class="login_inputs_inner_div">
+                        <div class="input_label_div">
+                            <input type="text" name="username" id="username">
+                            <label for="username">Benutzername</label>
+                        </div>
+                        <div class="input_label_div">
+                            <input type="password" name="password" id="password">
+                            <label for="username">Passwort</label>
+                        </div>
+                        <button class="regular_button_light">Anmelden</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <script>$("#footer").load("/footer.html");</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+.titel_img{
+    object-position: 10% 30%;
+    border-radius: 20px;
+}
+.page_titel{
+    color: var(--titel_div_text);
+    background-color:  var(--titel_div);
+    font-family: "Roboto", sans-serif;
+    margin-top: -170px;
+    height: 150px;
+    width: 60%;
+    border-radius: 20px;
+    font-size: 50px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 50px;
+    position: absolute;
+    margin-left: -50px;
+}
+.titel_three_infos{
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+    background-color: var(--three_info_background);
+    border-radius: 20px 20px 0 0;
+    padding: 30px 50px;
+    font-size: 50px;
+    font-weight: 500;
+}
+.three_infos{
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    gap: 8%;
+    padding: 0px 50px 50px 50px;
+    background-color: var(--three_info_background);
+    border-radius: 0 0 20px 20px;
+}
+.two_infos{
+    display: grid;
+    grid-template-columns: 46% 46%;
+    gap: 8%;
+    padding: 0px 50px 50px 50px;
+    background-color: var(--three_info_background);
+    border-radius: 0 0 20px 20px;
+}
+.info{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--info_background);
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+}
+.info_titel{
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--info_titel_color);
+}
+.info_text{
+    font-size: 20px;
+    font-weight: 350;
+    text-align: center;
+    width: 90%;
+    color: var(--info_text_color);
+}
+.info_button{
+    background-color: var(--button_background_light);
+    color: var(--button_text_light);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+}
+.info_button:hover{
+    background-color: var(--button_background_light_hover);
+    cursor: pointer;
+}
+.ueber_uns{
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+    background-color: var(--ueber_uns_background);
+    border-radius: 20px;
+    padding: 30px 50px;
+}
+.titel_ueber_uns{
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--ueber_uns_titel_color);
+    margin-top: 0;
+}
+.text_ueber_uns{
+    font-size: 20px;
+    font-weight: 350;
+    text-align: left;
+    width: 90%;
+    color: var(--ueber_uns_text_color);
+}
+@media only screen and (min-width: 1921px) {
+    .three_infos{
+        padding: 0px 50px 50px150px;
+    }
+    .titel_three_infos{
+        padding: 30px 50px;
+    }
+    .two_infos{
+        padding: 0px 50px 50px 50px;
+    }
+    .page_titel{
+        width: 50%;
+    }
+    .ueber_uns{
+        padding: 30px 50px;
+    }
+}

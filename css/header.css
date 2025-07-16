@@ -1,0 +1,293 @@
+header{
+    background-color: var(--header_background);
+    height: 170px;
+    padding: 0 10vw;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    transition-duration: 500ms;
+    position: fixed;
+    width: calc(100% - 20vw);
+    top: 0;
+    z-index: 100;
+}
+.top{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_image{
+    height: 80%;
+}
+.header_image:hover{
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    height: 35%;
+    width: 100%;
+}
+.nav_ul{
+    display: flex;
+    list-style: none;
+    margin: 0 0 0 0;
+    background-color: var(--header_nav_background_color);
+    padding: 5px;
+    border-radius: 21px 0 0 21px;
+    width: 100%;
+    height: 32px;
+    align-items: center;
+}
+.nav_link{
+    height: 22px;
+    margin: 0 4px 0 1px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: var(--header_nav_link);
+    padding: 5px 15px;
+    border-radius: 17px;
+    /*border-bottom: 3px var(--header_nav_link) solid;*/
+    transition: color 500ms;
+    transition: background-color 500ms;
+    white-space: nowrap;
+}
+.nav_img{
+    visibility: hidden;
+    opacity: 0;
+    height: 32px;
+    margin: 0;
+    width: 0;
+    transition: visibility 0s, opacity 200ms linear;
+}
+.nav_link:hover , .select_link{
+    color: var(--header_nav_link_hover);
+    background-color: var(--header_nav_link_background);
+    cursor: pointer;
+}
+.profile_div{
+    display: flex;
+    align-items: center;
+    background-color: var(--header_profile_div);
+    padding: 0 0 0 0;
+    border-radius: 21px;
+    margin-right: 20px;
+}
+.provile_div_text{
+    font-family: "Roboto", sans-serif;
+    margin: 0 20px 0 10px;
+    display: flex;
+    align-items: flex-end;
+    color: var(--header_profile_div_name);
+    transition-duration: 200ms;
+}
+.profile_div_name{
+    margin: 0;
+    font-size: 18px;
+    white-space: nowrap;
+}
+.profile_div_description{
+    margin: 0;
+}
+.profile_div_icon{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    height: 42px;
+    width: 42px;
+    margin: 0;
+    background-color: var(--header_profile_icon_backgroung);
+    color: var(--header_profile_icon_text_color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 21px;
+}
+.contact_div{
+    background-color: var(--header_nav_background_color);
+    border-radius: 0 21px 21px 0;
+    height: 42px;
+    transition-duration: 500ms;
+}
+.contact_link{
+    background-color: var(--header_nav_contact_background);
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: var(--header_nav_contact_text);
+    padding: 10px 15px;
+    border-radius: 22px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 500ms;
+}
+.contact_text{
+    margin: 0;
+    transition-duration: 200ms;
+}
+.contact_link svg, .login_link svg{
+    margin-right: 10px;
+}
+.login_div{
+    background-color: var(--header_nav_background_color);
+}
+.login_div:hover{
+    cursor: pointer;
+}
+.donate_div, .schnupper_div{
+    background-color: var(--dark_blue);
+    height: 40px;
+    width: 30px;
+    border-radius: 30px 0 0 30px;
+    position: fixed;
+    right: 0;
+    top: 70%;
+    padding: 10px 10px 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    transition: width 200ms ease-in-out, transform 100ms ease-in-out;
+}
+.schnupper_div{
+    background-color: var(--light_blue);
+    top: calc(70% + 70px);
+}
+.donate_div:hover{
+    cursor: pointer;
+    background-color: var(--dark_blue_50);
+    width: 140px;
+}
+.schnupper_div:hover{
+    cursor: pointer;
+    background-color: var(--light_blue);
+    width: 160px;
+}
+.donate_icon{
+    fill: white;
+    height: 35px;
+    width: 35px;
+    margin: 0 15px 0 0;
+}
+.donate_text{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+.schnuppern_icon{
+    fill: black;
+    height: 35px;
+    width: 35px;
+    margin: 0 15px 0 0;
+}
+.schnuppern_text{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+.mobile_nav{
+    height: 0;
+}
+.nav_ul_mobile{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0 0 0 0;
+    background-color: var(--header_nav_background_color);
+    padding: 5px 5px 5px 5px;
+    border-radius: 21px;
+    width: calc(100%-5px);
+    height: 0;
+    align-items: flex-start;
+
+    overflow: hidden;
+    opacity: 0;
+
+    transition: height 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+.menu_div{
+    padding: 10px 18px;
+    height: 22px;
+    width: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu_div:hover{
+    cursor: pointer;
+}
+.menu_div:hover .menu_string{
+    background-color: var(--light_blue);
+}
+.menu_string{
+    background-color: var(--dark_blue);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    transition: rotate 200ms ease-in-out;
+}
+.menu_div_checked .menu_string:nth-child(1){
+    transform-origin: left top;
+    transform: rotate(45deg);
+}
+.menu_div_checked .menu_string:nth-child(2){
+    background-color: transparent;
+}
+.menu_div_checked .menu_string:nth-child(3){
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+}
+.link_mobile{
+    margin: 5px 5px !important;
+}
+
+@media only screen and (min-width: 1921px) {
+    header{
+        padding: 0 20vw;
+        width: calc(100% - 40vw);
+    }
+}
+@media screen and (max-width: 1440px) {
+    .contact_text{
+        display: none;
+    }
+    .contact_link svg{
+        margin-right: 0;
+    }
+    .contact_link{
+        padding: 10px 10px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    header{
+        padding: 0 2vw;
+        width: calc(100% - 4vw);
+    }
+}
+@media screen and (max-width: 920px) {
+    .provile_div_text{
+        width: 0;
+        margin: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .profile_div{
+        margin-right: 10px;
+    }
+    .nav_link{
+        margin: 0 1px 0 1px;
+        padding: 5px 10px;
+    }
+}
+@media screen and (max-width: 425px) {
+    header{
+        height: 145px;
+    }
+    .top{
+        height: 90px;
+    }
+}

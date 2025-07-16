@@ -1,0 +1,30 @@
+
+.facts_div{
+    display: flex;
+    flex-wrap: wrap; /* <-- wichtig für den Umbruch */
+    gap: 20px;
+    margin-bottom: 50px;   
+}
+.fact{
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}
+.fact_icon{
+    padding-top: 10px;
+    height: 100px;
+    width: 100px;
+    fill: var(--dark_blue_50);
+}
+.fact_text{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.gleisplan_img{
+    width: 100%;
+}

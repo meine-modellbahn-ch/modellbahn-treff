@@ -1,0 +1,39 @@
+.titel_image_div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.titel_image{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: 50% 40%;
+}
+.titel_text_div{
+  background-color: var(--dark_blue_light);
+  padding: 0 30px;
+  color: white;
+}
+.text_schnuppern{
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.zeit_tabelle{
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.zeit_tabelle th, .zeit_tabelle td {
+  padding: 8px 12px;
+  border: 1px solid var(--mid_gray);
+  border-radius: 20px;
+  text-align: left;
+}
+.zeit_tabelle th {
+  background-color: var(--light_gray);
+}
+.zeit_tabelle td {
+  padding-right: 50px;
+}

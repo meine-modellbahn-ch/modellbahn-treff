@@ -1,0 +1,28 @@
+.presse_nav_div{
+    display: flex;
+}
+.presse_nav_ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding-inline-start: 0;
+}
+.presse_nav_li{
+    padding: 10px 20px;
+    margin: 0 10px 0 0;
+    background-color: var(--mid_gray);
+    height: 22px;
+    border-radius: 21px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    transition: background-color 200ms ease-in-out;
+}
+.presse_nav_li:hover{
+    cursor: pointer;
+    background-color: var(--dark_blue_50);
+    color: white;
+}
+.select_presse_type{
+    background-color: var(--dark_blue_50);
+    color: white;
+}

@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+}
+:root{
+    --light_blue: #63d2db;
+    --light_blue_50: #63d1db7c;
+    --dark_blue: #063664;
+    --dark_blue_50: #063764d4;
+    --dark_blue_light: #30597e;
+    --light_blue_hover: #96d3d8;
+    --light_gray: rgb(246, 246, 246);
+    --mid_gray: rgb(216, 216, 216);
+    --dark_gray: rgb(68, 68, 68);
+
+    --header_background: white;
+    --header_nav_link: var(--dark_blue);
+    --header_nav_link_background: var(--light_blue);
+    --header_nav_link_hover: white;
+    --header_profile_icon_backgroung: var(--dark_blue);
+    --header_profile_icon_text_color:white;
+    --header_profile_div: var(--light_blue);
+    --header_profile_div_name: white;
+    --header_nav_background_color: rgb(216, 216, 216);
+    --header_nav_contact_background: var(--dark_blue);
+    --header_nav_contact_text: white;
+    --header_nav_login_background: var(--light_blue);
+    --header_nav_login_text: white;
+    --footer_background: var(--dark_blue_50);
+    --footer_link_color: white;
+    --titel_div_text: white;
+    --three_info_background: var(--light_blue_50);
+    --titel_div: var(--dark_blue);
+    --info_background: var(--dark_blue);
+    --info_titel_color: white;
+    --info_text_color: white;
+    --button_background_light: var(--light_blue);
+    --button_color_light: var(--dark_blue);
+    --button_background_light_hover: var(--light_blue_hover);
+    --ueber_uns_background: var(--dark_blue_50);
+    --ueber_uns_titel_color: white;
+    --ueber_uns_text_color: white;
+}
+h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+}
+h2{
+    font-family: "Roboto", sans-serif;
+}
+h3{
+    font-family: "Roboto", sans-serif;
+}
+h4{
+    font-family: "Roboto", sans-serif;
+}
+h5{
+    font-family: "Roboto", sans-serif;
+}
+a{
+    font-family: "Roboto", sans-serif;
+}
+main{
+    margin: 0 10vw;
+    margin-top: 190px;
+    padding-bottom: 50px;
+}
+.titel_img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+.regular_button_light, .regular_button_dark{
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: max-content;
+}
+.regular_button_light{
+    background-color: var(--light_blue);
+}
+.regular_button_light:hover{
+    background-color: var(--light_blue_50);
+    cursor: pointer;
+}
+.regular_button_dark{
+    background-color: var(--dark_blue);
+    color: white;
+}
+.regular_button_dark:hover{
+    background-color: var(--dark_blue_50);
+    cursor: pointer;
+}
+.input_label_div{
+    display: flex;
+    flex-direction: column-reverse;
+}
+input, textarea{
+    width: 350px;
+    border: none;
+    outline: none;
+    border: var(--mid_gray) , solid 2px;
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    transition: border 200ms ease-in-out;
+}
+input:focus{
+    border: var(--dark_blue) , solid 2px;
+}
+input:required + label::after{
+    content: "*";
+}
+label{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+.checkbox_label_div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+input[type="checkbox"]{
+    width: min-content;
+    height: 20px;
+    width: 20px;
+    margin: 0 10px 0 0;
+    accent-color: var(--dark_blue_light);
+}
+input:disabled + label{
+    color: var(--mid_gray);
+}
+@media only screen and (min-width: 1921px) {
+    main{
+        margin: 0 20vw;
+        margin-top: 190px;
+        padding-bottom: 50px;
+    }
+}
