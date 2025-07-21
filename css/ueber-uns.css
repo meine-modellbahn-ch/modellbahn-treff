@@ -35,7 +35,7 @@
     display: flex;
 }
 .img_ueber_uns{
-    height: 350px;
+    height: 300px;
     width: calc(100% + 100px);
     object-fit: cover;
     object-position: 50% 50%;
@@ -81,5 +81,31 @@
     font-size: 30px;
     text-align: center;
     font-weight: 700;
+    color: white;
+}
+.team_geschichte_div{
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid var(--mid_gray);
+    padding: 0 0 20px 0;
+}
+.team_geschichte_p{
+    padding: 10px 20px;
+    margin: 0 10px 0 0;
+    background-color: var(--mid_gray);
+    height: 22px;
+    border-radius: 21px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    transition: background-color 200ms ease-in-out;
+}
+.team_geschichte_p:hover{
+    cursor: pointer;
+    background-color: var(--dark_blue_50);
+    color: white;
+}
+.select_team_geschichte_type{
+    background-color: var(--dark_blue_50);
     color: white;
 }
