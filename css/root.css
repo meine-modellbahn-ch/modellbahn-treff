@@ -58,6 +58,8 @@ h5{
 }
 a{
     font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: var(--dark_blue_light);
 }
 main{
     margin: 0 10vw;
@@ -133,6 +135,10 @@ input[type="checkbox"]{
 }
 input:disabled + label{
     color: var(--mid_gray);
+}
+.regular_text{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
 }
 @media only screen and (min-width: 1921px) {
     main{
