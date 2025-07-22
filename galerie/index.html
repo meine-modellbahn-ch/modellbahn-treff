@@ -6,12 +6,13 @@
     <title>Modellbahn-Treff for Kids</title>
     <link rel="stylesheet" href="/css/root.css">
     <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/gallerie.css">
+    <link rel="stylesheet" href="/css/galerie.css">
     <link rel="stylesheet" href="/css/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body>
@@ -19,7 +20,19 @@
     <script>$("#header").load("/header.html");</script>
     <main>
         <h1>Galerie</h1>
+        <div class="old_flickr_div">
+            <div class="div_old">
+                <p class="old_flickr_text">Bilder bis Juni 2020</p>
+                <a href="https://www.modellbahn-treff.ch/bilder" class="flickr_button">Alte Galerie</a>
+            </div>
+            <div class="div_new">
+                <p class="old_flickr_text">Bilder ab Juni 2020</p>
+                <a href="https://www.flickr.com/photos/189183581@N03/" class="flickr_button"><img src="/img/social_icons/flickr.png" alt=""></a>
+            </div>
+        </div>
+        <h2>Highlights</h2>
         <h3>Hier gibt es noch nichts zu sehen.</h3>
+        
     </main>
     <footer id="footer"></footer>
     <script>$("#footer").load("/footer.html");</script>

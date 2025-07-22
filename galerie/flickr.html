@@ -1,0 +1,33 @@
+<div id="flickr-gallery" style="display:flex; flex-wrap:wrap; gap:1em;"></div>
+<!-- Lightbox für große Ansicht -->
+<div id="lightbox"
+    style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; flex-direction:column; z-index:1000;">
+    <img id="lightbox-img" src="" style="max-width:90vw; max-height:70vh;">
+    <p id="lightbox-desc" style="color:white; max-width:90vw; text-align:center;"></p>
+    <button onclick="$('#lightbox').hide();" style="margin-top:1em;">Schließen</button>
+</div>
+<script> 
+    const apiKey = 'YOUR_API_KEY'; // <-- Hier deinen Flickr API Key eintragen
+    const userId = '189183581@N03';      // <-- Hier deine Flickr User-ID eintragen
+    $.getJSON(`https://www.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=${apiKey}&user_id=${userId}&extras=url_m,description&format=json&nojsoncallback=1`, function (data) { 
+        if (data.photos && data.photos.photo) { 
+            data.photos.photo.forEach(photo => { 
+                const thumb = photo.url_m; 
+                const large = `https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_b.jpg`; 
+                const desc = photo.description._content || ''; 
+                $('#flickr-gallery').append(`
+                    <a href="#" class="flickr-thumb" data-large="${large}" data-desc="${desc}">
+                        <img src="${thumb}" alt="${desc}" style="max-width:200px; border-radius:8px;">
+                    </a>
+                `); 
+            }); 
+        } 
+    });
+    // Lightbox-Logik
+    $(document).on('click', '.flickr-thumb', function(e) {
+        e.preventDefault();
+        $('#lightbox-img').attr('src', $(this).data('large'));
+        $('#lightbox-desc').html($(this).data('desc'));
+        $('#lightbox').css('display', 'flex');
+    });
+</script>

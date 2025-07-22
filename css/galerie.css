@@ -1,0 +1,54 @@
+h1{
+    margin-bottom: 0;
+}
+.galerie_flicker_text{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+.old_flickr_div{
+    display: flex;
+    min-width: 400px;
+    width: 40%;
+    margin-top: 0;
+    height: min-content;
+}
+.old_flickr_text{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--mid_gray);
+    width: 100%;
+    height: min-content;
+}
+.div_old, .div_new{
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+}
+.div_old{
+    margin-right: 10px;
+}
+.div_new{
+    margin-left: 10px;
+}
+.flickr_button{
+    height: 30px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: 1px solid var(--mid_gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    text-decoration: none;
+    color: var(--dark_blue);
+    font-size: 18px;
+    font-weight: 500;
+}
+.flickr_button img{
+    height: 30px;
+    width: auto;
+}
+.flickr_button:hover{
+    cursor: pointer;
+}
