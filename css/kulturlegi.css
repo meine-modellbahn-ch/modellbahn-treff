@@ -1,0 +1,11 @@
+.kulturlegi_text{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+.kulturlegi_text li{
+    list-style: url("/img/icons/google/arrow_right.svg");
+}
+.kulturlegi_logo{
+    height: 100px;
+}
