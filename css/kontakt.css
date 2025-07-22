@@ -104,7 +104,8 @@
 }
 .anfahrt_map{
     width: 59%;
-    height: 550px;
+    min-height: 550px;
+    height: auto;
     border: none;
     border-radius: 10px;
 }
