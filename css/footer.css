@@ -28,6 +28,11 @@ footer a{
 .right{
     align-items: flex-end;
 }
+.fix_page_end{
+    position: fixed;
+    bottom: 0;
+    width: 80vw;
+}
 @media only screen and (min-width: 1921px) {
     footer{
         padding: 50px 20vw 15px 20vw;
