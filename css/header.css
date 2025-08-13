@@ -282,12 +282,18 @@ header{
         margin: 0 1px 0 1px;
         padding: 5px 10px;
     }
-}
-@media screen and (max-width: 425px) {
     header{
         height: 145px;
     }
     .top{
         height: 90px;
+    }
+}
+@media screen and (max-width: 425px) {
+    header{
+        height: 125px;
+    }
+    .top{
+        height: 70px;
     }
 }

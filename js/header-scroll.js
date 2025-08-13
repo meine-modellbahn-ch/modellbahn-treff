@@ -16,8 +16,7 @@ if (hatOverflow) {
   document.getElementById('mobile_nav').style.display = "auto";
   document.getElementById('menu_button').style.display = "flex";
 
-  document.getElementById('nav_img').style.display = 'none';
-  document.getElementById('nav_img_mobile').style.display = 'block';
+  document.getElementById('logo').src = '/img/MBT Logo Klein.svg';
 
 } else {
   console.log('Kein Overflow vorhanden.');
@@ -25,9 +24,6 @@ if (hatOverflow) {
 
   document.getElementById('mobile_nav').style.display = "none";
   document.getElementById('menu_button').style.display = "none";
-
-  document.getElementById('nav_img').style.display = 'block';
-  document.getElementById('nav_img_mobile').style.display = 'none';
 }
 
 width();
@@ -38,8 +34,10 @@ window.onscroll = function () {
   if (screen.width > 425) {
     var currentScrollPos = window.pageYOffset;
     if (window.scrollY <= 70) {
-      if (window.innerWidth <= 425) {
+      if (window.innerWidth <= 920 && window.innerWidth >= 425) {
         document.getElementById("header").style.height = "145px";
+      } else if (window.innerWidth <= 425) {
+        document.getElementById("header").style.height = "125px";
       } else {
         document.getElementById("header").style.height = "170px";
       }
@@ -50,7 +48,15 @@ window.onscroll = function () {
       document.getElementById("nav_img").style.margin = "0";
       document.getElementById("nav_img").style.width = "0";
       document.getElementById("nav").style.height = "60px";
-      document.getElementById("top").style.height = "110px";
+
+      if (window.innerWidth <= 920 && window.innerWidth >= 425) {
+        document.getElementById("top").style.height = "90px";
+      } else if (window.innerWidth <= 425) {
+        document.getElementById("top").style.height = "70px";
+      } else {
+        document.getElementById("top").style.height = "110px";
+      }
+
       document.getElementById("logo").style.height = "80%";
       if (currentScrollPos < prevScrollpos) {
         window.scrollTo(0, 0);
