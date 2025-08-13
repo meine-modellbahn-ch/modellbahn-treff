@@ -16,12 +16,18 @@ if (hatOverflow) {
   document.getElementById('mobile_nav').style.display = "auto";
   document.getElementById('menu_button').style.display = "flex";
 
+  document.getElementById('nav_img').style.display = 'none';
+  document.getElementById('nav_img_mobile').style.display = 'block';
+
 } else {
   console.log('Kein Overflow vorhanden.');
   overflow = false;
 
   document.getElementById('mobile_nav').style.display = "none";
   document.getElementById('menu_button').style.display = "none";
+
+  document.getElementById('nav_img').style.display = 'block';
+  document.getElementById('nav_img_mobile').style.display = 'none';
 }
 
 width();
