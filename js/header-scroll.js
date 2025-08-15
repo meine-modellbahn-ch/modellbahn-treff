@@ -16,7 +16,7 @@ if (hatOverflow) {
   document.getElementById('mobile_nav').style.display = "auto";
   document.getElementById('menu_button').style.display = "flex";
 
-  document.getElementById('logo').src = '/img/MBT Logo Light Klein Pre.svg';
+  //document.getElementById('logo').src = '/img/MBT Logo Light Klein Pre.svg';
 
 } else {
   console.log('Kein Overflow vorhanden.');
