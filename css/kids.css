@@ -38,7 +38,7 @@
     width: 100%s;
 }
 .phone_control img{
-    width: 40%;
+    width: 10%;
     filter: drop-shadow(0 20px 20px var(--dark_blue_50));
     z-index: 1;
     margin-bottom: 70px;
