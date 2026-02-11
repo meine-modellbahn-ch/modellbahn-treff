@@ -7,6 +7,7 @@
     margin-bottom: 50px;
     height: 570px;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 .phone_control{
     background-color: var(--dark_blue);
@@ -17,6 +18,7 @@
     align-items: end;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
     margin-top: 200px;
+    width: calc(100% - 70px);
 }
 .phone_info_titel{
     margin-left: 20px;
@@ -37,12 +39,31 @@
     font-size: 20px;
     width: 100%s;
 }
+.text_phone_control a{
+    color: white;
+    text-decoration: underline;
+}
 .phone_control img{
     width: 20%;
     max-height: 450px;
     filter: drop-shadow(0 20px 20px var(--dark_blue_50));
     z-index: 1;
     margin-bottom: 70px;
+    object-fit: scale-down;
+}
+.railpilot_logo{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin: 0 200px 50px 0;
+    z-index: 2;
+    transition: height 100ms ease-in-out, width 100ms ease-in-out, margin 100ms ease-in-out;
+}
+.railpilot_logo:hover{
+    cursor: pointer;
+    width: 105px;
+    height: 105px;
+    margin: 0 197.5px 47.5px 0;
 }
 .z21_div{
     background-color: var(--light_blue);
