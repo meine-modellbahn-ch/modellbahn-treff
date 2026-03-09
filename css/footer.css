@@ -37,4 +37,7 @@ footer a{
     footer{
         padding: 50px 20vw 15px 20vw;
     }
+    .fix_page_end{
+    width: 60vw;
+}
 }
