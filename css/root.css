@@ -147,3 +147,30 @@ input:disabled + label{
         padding-bottom: 50px;
     }
 }
+/* Smartphone */
+@media (max-width: 767px) {
+    h1{
+        font-size: 40px;
+    }
+    main{
+        margin: 0 5vw;
+        margin-top: 140px;
+        width: 90vw;
+    }
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  main{
+    margin: 0 5vw;
+    margin-top: 190px;
+    width: 90vw;
+  }
+}
+/* Small Laptop */
+@media (min-width: 992px) and (max-width: 1200px) {
+  main{
+    margin: 0 5vw;
+    margin-top: 190px;
+    width: 90vw;
+  }
+}
