@@ -57,3 +57,37 @@
 }.timeline_text{
     font-family: "Roboto", sans-serif;
 }
+/* Smartphone */
+@media (max-width: 767px) {
+    .timeline_row{
+        flex-direction: column;
+    }
+    .timeline_date{
+        padding: 0;
+        margin: 0;
+        justify-content: flex-start;
+    }
+    .timeline_date_text{
+        margin: 0 0 10px 0;
+    }
+    .timline_span{
+        display: none;
+    }
+    .timeline_date{
+        border: none;
+    }
+    .two_content_row{
+        flex-direction: column;
+    }
+    .timeline_content{
+        width: calc(100% - 40px);
+    }
+    .two_content_row div{
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+    .two_content_row div:first-child{
+        width: 100%;
+        padding: 0 0 0 0;
+}
+}

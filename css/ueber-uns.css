@@ -109,3 +109,61 @@
     background-color: var(--dark_blue_50);
     color: white;
 }
+/* Smartphone */
+@media (max-width: 767px) {
+    .ueber_uns{
+        padding: 30px 20px;
+    }
+    .img_ueber_uns{
+        width: calc(100% + 40px);
+        margin: -50px -20px 0 -20px;
+    }
+    .text_ueber_uns{
+        margin: 20px 0 0 0;
+        font-size: 18px;
+    }
+    .person{
+        width: 155px;
+    }
+    .person_img{
+        width: 100%;
+        height: 200px;
+    }
+    .person_description{
+        padding: 0 20px;
+        margin: -40px 0 10px 0;
+        height: 40px;
+        width: 115px;
+        font-size: 12px;
+    }
+    .person_name{
+        width: 115px;
+        margin: 10px 20px;
+        font-size: 20px;
+    }
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .person{
+        width: 200px;
+    }
+    .person_img{
+        width: 100%;
+        height: 250px;
+    }
+    .person_description{
+        padding: 0 20px;
+        margin: -50px 0 10px 0;
+        height: 50px;
+        width: 160px;
+    }
+    .person_name{
+        width: 160px;
+        margin: 10px 20px;
+        font-size: 25px;
+    }
+}
+/* Small Laptop */
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+}
