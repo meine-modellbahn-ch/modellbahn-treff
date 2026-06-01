@@ -43,10 +43,15 @@
     border-radius: 20px 20px 0 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
 }
+#team_geschichte_div h2{
+    font-size: 30px;
+}
 .person_div{
     display: flex;
     flex-wrap: wrap; /* <-- wichtig für den Umbruch */
     gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--mid_gray);
 }
 .person{
     width: 250px;
