@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body>
@@ -27,12 +29,17 @@
             </div>
             <div class="div_new">
                 <p class="old_flickr_text">Bilder ab Juni 2020</p>
-                <a href="https://www.flickr.com/photos/189183581@N03/" class="flickr_button"><img src="/img/social_icons/flickr.png" alt=""></a>
+                <a href="https://www.flickr.com/photos/189183581@N03/" class="flickr_button">Neue Galerie</a>
             </div>
         </div>
         <h2>Highlights</h2>
-        <h3>Hier gibt es noch nichts zu sehen.</h3>
-        
+        <section class="gallery">
+            <img src="/img/highlights/image_anlage.jpg" alt="" class="gallery-img">
+            <img src="/img/highlights/image_kids.jpg" alt="" class="gallery-img">
+            <img src="/img/highlights/start_rading_krems2.jpg" alt="" class="gallery-img">
+            <img src="/img/highlights/highlights_1.jpg" alt="" class="gallery-img">
+        </section>
+        <script src="/js/gallery.js"></script>
     </main>
     <footer id="footer"></footer>
     <script>$("#footer").load("/footer.html");</script>

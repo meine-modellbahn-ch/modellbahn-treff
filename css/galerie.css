@@ -7,7 +7,7 @@ h1{
 }
 .old_flickr_div{
     display: flex;
-    min-width: 400px;
+    min-width: 350px;
     width: 40%;
     margin-top: 0;
     height: min-content;
@@ -44,6 +44,7 @@ h1{
     color: var(--dark_blue);
     font-size: 18px;
     font-weight: 500;
+    text-wrap: nowrap;
 }
 .flickr_button img{
     height: 30px;
@@ -52,6 +53,60 @@ h1{
 .flickr_button:hover{
     cursor: pointer;
 }
+/* Galerie */
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+.gallery-img{
+    width: 100%;
+}
+.gallery-img:hover{
+    cursor: pointer;
+}
+.img-window{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.img-window img{
+    max-width: 80vw;
+    max-height: 80vh;
+    overflow-y: hidden;
+}
+.change-btn{
+    color: white;
+    zoom: 2;
+    margin: 10px;
+}
+.close-btn{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    color: white;
+    zoom: 1.5;
+}
+.close-btn:hover, .change-btn:hover{
+    cursor: pointer;
+}
 /* Handy */
 @media (max-width: 767px) {
+    .gallery{
+        grid-template-columns: auto;
+    }
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .gallery{
+        grid-template-columns: auto auto;
+    }
 }

@@ -135,3 +135,89 @@
     height: 100%;
     border-radius: 10px;
 }
+.button_anfahrtsplan{
+    display: none;
+}
+/* Handy */
+@media (max-width: 767px) {
+    .main_contact_div{
+        flex-direction: column;
+        height: auto;
+    }
+    .contact_maps_div .maps{
+        height: 200px;
+    }
+    .contact_maps_div{
+        /*height: 300px;*/
+        width: calc(100% - 40px);
+    }
+    .contact_text_div{
+        width: 100%;
+        margin: 20px;
+    }
+    .splitt_contact_div{
+        margin: 0;
+    }
+    .contact_icon_text_div{
+        margin: 10px 0 ;
+        padding: 0;
+    }
+    .anfahrt_maps_text{
+        flex-direction: column;
+        width: 100%;
+    }
+    .anfahrt_map{
+        width: 100%;
+        height: 200px;
+        min-height: 200px;
+        display: none;
+    }
+    .anfahrt_text_div{
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
+    .sbb_fahrplan{
+        display: none;
+    }
+    .button_anfahrtsplan{
+        display: flex;
+    }
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .main_contact_div{
+        flex-direction: column;
+        height: auto;
+    }
+    .contact_maps_div .maps{
+        height: 300px;
+    }
+    .contact_maps_div{
+        /*height: 300px;*/
+        width: calc(100% - 40px);
+    }
+    .contact_text_div{
+        width: 100%;
+        margin: 20px;
+    }
+    .splitt_contact_div{
+        margin: 0;
+    }
+    .contact_icon_text_div{
+        margin: 10px 0 ;
+        padding: 0;
+    }
+    .anfahrt_maps_text{
+        flex-direction: column;
+        width: 100%;
+    }
+    .anfahrt_map{
+        width: 100%;
+        height: 300px;
+        min-height: 200px;
+    }
+    .anfahrt_text_div{
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
+}

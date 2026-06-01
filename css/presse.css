@@ -26,3 +26,25 @@
     background-color: var(--dark_blue_50);
     color: white;
 }
+.one_page{
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.double_page{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+.double_page img{
+    width: 50%;
+}
+/* Handy */
+@media (max-width: 767px) {
+    .presse_nav_ul{
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+}

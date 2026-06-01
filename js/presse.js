@@ -17,4 +17,16 @@ function set_presse_type(id){
         document.getElementById(presse_lis[i].id).classList.remove("select_presse_type");
     }
     document.getElementById(id).classList.add("select_presse_type");
+
+  switch(presse_type) {
+    case "Zeitungen":
+      $("#content").load("zeitungen.html");
+      break;
+    case "Bahn-Jahrbuch":
+      $("#content").load("bjb.html");
+      break;
+    case "Magazine":
+      $("#content").load("magazine.html");
+      break;
+  }
 }
