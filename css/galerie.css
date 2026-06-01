@@ -52,3 +52,6 @@ h1{
 .flickr_button:hover{
     cursor: pointer;
 }
+/* Handy */
+@media (max-width: 767px) {
+}

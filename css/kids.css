@@ -227,3 +227,103 @@
     font-size: 20px;
     margin: 0;
 }
+/* Handy */
+@media (max-width: 767px) {
+    .text_img_left, .text_img_right{
+        flex-direction: column;
+        height: auto;
+    }
+    .text_img_left img, .text_img_right img{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .text_img_left .text_div .titel, .text_img_right .text_div .titel {
+        margin: 0 0 0 0;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .phone_control{
+        height: auto;
+    }
+    .phone_control img{
+        width: 100%;
+        display: none;
+    }
+    .text_phone_control{
+        margin-right: 20px;
+    }
+    .text_phone_control h1{
+        font-size: 30px;
+    }
+    .railpilot_logo{
+        display: none;
+    }
+
+    .schnupper_formular .row{
+        flex-direction: column;
+    }
+    .schnupper_formular textarea{
+        width: calc(100% - 15px);
+    }
+    .input_label_div{
+        width: calc(100% - 15px);
+    }
+    .input_label_div input{
+        width: 100%;
+    }
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .text_img_left, .text_img_right{
+        flex-direction: column;
+        height: auto;
+    }
+    .text_img_left img, .text_img_right img{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .text_img_left .text_div .titel, .text_img_right .text_div .titel {
+        margin: 0 0 0 0;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .phone_control{
+        height: 400px;
+    }
+    .phone_control img{
+        width: 100%;
+    }
+    .text_phone_control{
+        margin-right: 20px;
+    }
+    .text_phone_control h1{
+        font-size: 30px;
+    }
+
+    .schnupper_formular .row{
+        flex-direction: column;
+    }
+    .schnupper_formular textarea{
+        width: calc(100% - 20px);
+    }
+}
+/* Small Laptop */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .text_img_left img, .text_img_right img{
+        height: 100%;
+        width: 50%;
+        object-fit: cover;
+    }
+    .text_img_left .text_div .titel, .text_img_right .text_div .titel {
+        margin: 0 0 0 0;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .phone_info{
+        height: 450px;
+    }
+}
