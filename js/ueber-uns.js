@@ -1,4 +1,4 @@
-var presse_type = "Geschichte";
+var presse_type = "Team";
 
 var presse_lis = document.getElementById("select_team_geschichte_div").getElementsByClassName("team_geschichte_p");
 for (let i = 0; i < presse_lis.length; i++) {
