@@ -47,7 +47,8 @@
       var currentMonth_sbb = month[mm_sbb];
       var yyyy_sbb = sbbdate_new_format.getFullYear();
 
-      sbbdate_new = dd_sbb + '.' + currentMonth_sbb + '.' + yyyy_sbb;
+      sbbdate_new = yyyy_sbb + '-' + currentMonth_sbb + '-' + dd_sbb;
+      console.log(sbbdate_new);
       let url = `https://www.sbb.ch/de?von=${sbbfrom}&nach=${sbbto}&datum=${sbbdate_new}&zeit=${sbbtime}&an=${arrival}&suche=true`;
       window.open(url, '_blank');
     }
