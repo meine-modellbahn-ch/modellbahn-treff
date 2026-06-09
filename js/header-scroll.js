@@ -99,6 +99,8 @@ function width(){
     document.getElementById("contact_link_svg").style.marginRight = "10";
     document.getElementById("contact_link").style.padding = "10px 15px";
   }
+  document.getElementById("profile_div_text").style.display = "none";
+  document.getElementById("login_div").style.display = "none";
 }
 
 window_url = window.location.pathname.split("/")[1];
