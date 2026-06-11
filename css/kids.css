@@ -315,7 +315,7 @@
 @media (min-width: 992px) and (max-width: 1200px) {
     .text_img_left img, .text_img_right img{
         height: 100%;
-        width: 50%;
+        width: 45%;
         object-fit: cover;
     }
     .text_img_left .text_div .titel, .text_img_right .text_div .titel {
