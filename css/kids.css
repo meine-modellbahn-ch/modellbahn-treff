@@ -107,6 +107,7 @@
     border-radius: 20px;
     margin-bottom: 50px;
     flex-direction: row-reverse;
+    justify-content: space-between;
 }
 .text_img_left img, .text_img_right img{
     height: 100%;
