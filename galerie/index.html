@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie - Modellbahn-Treff | Bilder der Modellbahnanlage</title>
-    <meta name="description" content="Galerie vom Modellbahn-Treff: Sehen Sie die Baufortschritte unserer Spur-N Anlage. Highlights, Details und Kinder beim Bauen und Fahren.">
+    <meta name="description"
+        content="Galerie vom Modellbahn-Treff: Sehen Sie die Baufortschritte unserer Spur-N Anlage. Highlights, Details und Kinder beim Bauen und Fahren.">
     <meta name="keywords" content="Galerie, Bilder, Modellbahn, Fotos, Spur N, Baufortschritt">
     <meta name="author" content="Modellbahn-Treff for Kids GmbH">
     <link rel="canonical" href="https://www.modellbahn-treff.ch/galerie/">
@@ -18,34 +20,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
+
 <body>
     <header id="header"></header>
     <script>$("#header").load("/header.html");</script>
     <main>
         <h1>Galerie</h1>
-        <section class="old_flickr_div">
-            <article class="div_old">
-                <p class="old_flickr_text">Bilder bis Juni 2020</p>
-                <a href="https://www.modellbahn-treff.ch/bilder" class="flickr_button">Alte Galerie</a>
-            </article>
-            <article class="div_new">
-                <p class="old_flickr_text">Bilder ab Juni 2020</p>
-                <a href="https://www.flickr.com/photos/189183581@N03/" class="flickr_button">Neue Galerie</a>
-            </article>
+        <section class="galerie_yt_div">
+            <a target="_blank" href="https://www.flickr.com/photos/189183581@N03/" class="linkbox_cloud">
+                <img src="/img/linkbox_foto_cloud.png" alt="foto cloud">
+                <div class="linkbox_overlay">
+                    <p class="overlay_text">Zu unserer Fotocloud<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M647-440H200q-17 0-28.5-11.5T160-480q0-17 11.5-28.5T200-520h447L451-716q-12-12-11.5-28t12.5-28q12-11 28-11.5t28 11.5l264 264q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L508-188q-11 11-27.5 11T452-188q-12-12-12-28.5t12-28.5l195-195Z"/></svg></p>
+                </div>
+            </a>
+            <iframe class="youtube_iframe" src="https://www.youtube.com/embed/WKdyqryDU-w" title="Dokumentation MBT"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
         <h2>Highlights</h2>
         <section class="gallery">
-            <img src="/img/highlights/image_anlage.jpg" alt="Modellbahnanlage - 60m² Spur N Großanlage" class="gallery-img">
-            <img src="/img/highlights/image_kids.jpg" alt="Kids bauen Modellbahn - Kinder arbeiten handwerklich" class="gallery-img">
-            <img src="/img/highlights/start_rading_krems2.jpg" alt="Modellbahn Fahrt - Züge auf der Strecke" class="gallery-img">
-            <img src="/img/highlights/highlights_1.jpg" alt="Gleisplan und Landschaftsgestaltung - Modellbahndetails" class="gallery-img">
+            <img src="/img/highlights/image_anlage.jpg" alt="Modellbahnanlage - 60m² Spur N Großanlage"
+                class="gallery-img">
+            <img src="/img/highlights/image_kids.jpg" alt="Kids bauen Modellbahn - Kinder arbeiten handwerklich"
+                class="gallery-img">
+            <img src="/img/highlights/start_rading_krems2.jpg" alt="Modellbahn Fahrt - Züge auf der Strecke"
+                class="gallery-img">
+            <img src="/img/highlights/highlights_1.jpg" alt="Gleisplan und Landschaftsgestaltung - Modellbahndetails"
+                class="gallery-img">
         </section>
         <script src="/js/gallery.js"></script>
     </main>
     <footer id="footer"></footer>
     <script>$("#footer").load("/footer.html");</script>
 </body>
+
 </html>

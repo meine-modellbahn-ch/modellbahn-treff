@@ -1,10 +1,12 @@
 body{
     min-height: 100vh;
-    margin: 30px 0 0 0;
+    margin: 0 0 0 0;
     display: flex;
     flex-direction: column;
 }
 :root{
+    --set_top_text: 30px;
+
     --light_blue: #63d2db;
     --light_blue_50: #63d1db7c;
     --dark_blue: #063664;
@@ -66,7 +68,7 @@ a{
 }
 main{
     margin: 0 10vw;
-    margin-top: 190px;
+    margin-top: calc(190px + var(--set_top_text));
     padding-bottom: 50px;
     flex: 1;
 }
@@ -148,7 +150,7 @@ input:disabled + label{
 @media only screen and (min-width: 1921px) {
     main{
         margin: 0 20vw;
-        margin-top: 190px;
+        margin-top: calc(190px + var(--set_top_text));
         padding-bottom: 50px;
     }
 }
@@ -159,7 +161,7 @@ input:disabled + label{
     }
     main{
         margin: 0 5vw;
-        margin-top: 140px;
+        margin-top: calc(140px + var(--set_top_text));
         width: 90vw;
     }
 }
@@ -167,7 +169,7 @@ input:disabled + label{
 @media (min-width: 768px) and (max-width: 991px) {
   main{
     margin: 0 5vw;
-    margin-top: 190px;
+    margin-top: calc(190px + var(--set_top_text));
     width: 90vw;
   }
 }
@@ -175,7 +177,7 @@ input:disabled + label{
 @media (min-width: 992px) and (max-width: 1200px) {
   main{
     margin: 0 5vw;
-    margin-top: 190px;
+    margin-top: calc(190px + var(--set_top_text));
     width: 90vw;
   }
 }

@@ -1,10 +1,20 @@
+.split_henry_text{
+    display: flex;
+    width: 100%;
+}
 .ueber_uns{
     font-family: "Roboto", sans-serif;
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: var(--ueber_uns_background);
     border-radius: 20px;
     padding: 30px 50px;
     transition: height 4s;
+}
+.henry_image{
+    width: 30%;
+    object-fit: cover;
+    margin-left: 20px;
+    border-radius: 20px;
 }
 .titel_ueber_uns{
     font-size: 50px;
@@ -114,6 +124,7 @@
     background-color: var(--dark_blue_50);
     color: white;
 }
+
 /* Smartphone */
 @media (max-width: 767px) {
     .ueber_uns{
@@ -146,6 +157,15 @@
         margin: 10px 20px;
         font-size: 20px;
     }
+    .split_henry_text{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .henry_image{
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
 }
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -166,6 +186,9 @@
         width: 160px;
         margin: 10px 20px;
         font-size: 25px;
+    }
+    .henry_image{
+        width: 40%;
     }
 }
 /* Small Laptop */

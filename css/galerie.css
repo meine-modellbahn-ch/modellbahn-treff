@@ -98,15 +98,133 @@ h1{
 .close-btn:hover, .change-btn:hover{
     cursor: pointer;
 }
+.linkbox_cloud{
+    width: calc(50% - 25px);
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.linkbox_cloud img{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+}
+.linkbox_overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: calc(80vw * 0.5 - 25px);
+    aspect-ratio: 16/9;
+    transform: translateY(calc(-100% - 4px));
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+.overlay_text{
+    color: white;
+    font-size: 40px;
+    padding: 30px;
+    margin: 0;
+    background-color: var(--dark_gray);
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.overlay_text svg{
+    height: 40px;
+    width: 40px;
+    fill: var(--dark_blue);
+    margin-left: 20px;
+    padding: 10px;
+    background-color: var(--light_blue);
+    border-radius: 50%;
+}
+.galerie_yt_div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.youtube_iframe{
+    width: calc(50% - 25px);
+    aspect-ratio: 16/9;
+    height: min-content;
+    border-radius: 20px;
+}
+@media only screen and (min-width: 1921px) {
+    .linkbox_overlay{
+        width: calc(60vw * 0.5 - 25px);
+    }
+}
+@media only screen and (min-width: 3200px) {
+    .linkbox_overlay{
+        width: calc(60vw * 0.5 - 32px);
+    }
+}
 /* Handy */
 @media (max-width: 767px) {
     .gallery{
         grid-template-columns: auto;
+    }
+    .galerie_yt_div{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .youtube_iframe{
+        width: 100%;
+    }
+    .linkbox_cloud{
+        width: 100%;
+    }
+    .linkbox_overlay{
+        width: calc(90vw);
+    }
+    .overlay_text{
+        font-size: 25px;
+        padding: 15px;
+    }
+    .overlay_text svg{
+        height: 30px;
+        width: 30px;
+        padding: 5px;
     }
 }
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
     .gallery{
         grid-template-columns: auto auto;
+    }
+    .galerie_yt_div{
+        flex-direction: column;
+    }
+    .linkbox_overlay{
+        width: calc(90vw * 0.5 - 25px);
+    }
+    .overlay_text{
+        font-size: 30px;
+        padding: 20px;
+    }
+    .overlay_text svg{
+        font-size: 30px;
+        padding: 5px;
+    }
+}
+/* Small Laptop */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .galerie_yt_div{
+        flex-direction: column;
+    }
+    .linkbox_overlay{
+        width: calc(90vw * 0.5 - 25px);
+    }
+    .overlay_text{
+        font-size: 30px;
+        padding: 20px;
+    }
+    .overlay_text svg{
+        font-size: 30px;
+        padding: 5px;
     }
 }

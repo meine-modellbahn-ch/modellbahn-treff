@@ -1,9 +1,9 @@
 let galleryImages = document.querySelectorAll(".gallery-img");
 let lastOpenImg;
 
-if(galleryImages) {
-    galleryImages.forEach(function(image, index) {
-        image.onclick = function() {
+if (galleryImages) {
+    galleryImages.forEach(function (image, index) {
+        image.onclick = function () {
             let imgFullUrl = image.src;
             let imgSplitUrl = imgFullUrl.split("/img/gallery/");
             let imgNameUrl = imgSplitUrl[1];
@@ -16,6 +16,11 @@ if(galleryImages) {
             container.appendChild(newImgWindow);
             newImgWindow.setAttribute("class", "img-window")
             container.setAttribute("style", "overflow-y: hidden;");
+            newImgWindow.addEventListener("click", function (event) {
+                if (event.target === newImgWindow) {
+                    closeImg();
+                }
+            });
 
             //back button
             let PrevBtn = document.createElement("span");
@@ -24,7 +29,7 @@ if(galleryImages) {
             newImgWindow.appendChild(PrevBtn);
             PrevBtn.setAttribute("class", "material-symbols-outlined change-btn");
             PrevBtn.setAttribute("onclick", "changeImg(0)");
-            
+
             //img
             let newImgTag = document.createElement("img");
             newImgWindow.appendChild(newImgTag);
@@ -61,13 +66,13 @@ function changeImg(changeDir) {
     let calcNewImg;
     if (changeDir === 1) {
         calcNewImg = lastOpenImg + 1;
-        if(calcNewImg > galleryImages.length - 1){
+        if (calcNewImg > galleryImages.length - 1) {
             calcNewImg = 0;
         }
     }
-    else if(changeDir === 0){
+    else if (changeDir === 0) {
         calcNewImg = lastOpenImg - 1;
-        if(calcNewImg < 0){
+        if (calcNewImg < 0) {
             calcNewImg = galleryImages.length - 1;
         }
     }
@@ -77,16 +82,16 @@ function changeImg(changeDir) {
     lastOpenImg = calcNewImg
 }
 
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function (event) {
     if (event.code === "ArrowLeft") {
         changeImg(0);
     } else if (event.code === "ArrowRight") {
         changeImg(1);
     }
-  });
-  
-document.addEventListener("keydown", function(event) {
+});
+
+document.addEventListener("keydown", function (event) {
     if (event.code === "Escape") {
         closeImg();
     }
-  });
+});

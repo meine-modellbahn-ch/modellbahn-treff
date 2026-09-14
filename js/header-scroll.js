@@ -1,33 +1,41 @@
 var menu_open = false;
 
-const div = document.getElementById('nav');
-const hatOverflow = div.scrollWidth > div.clientWidth;
 
-if (hatOverflow) {
-  console.log('Der Inhalt hat Overflow.');
-  overflow = true;
 
-  document.getElementById('nav_ul').querySelectorAll('li').forEach(child => {
-    child.remove();
-  });
-  document.getElementById('nav_ul').querySelectorAll('img').forEach(child => {
-    child.remove();
-  });
-  document.getElementById('mobile_nav').style.display = "auto";
-  document.getElementById('menu_button').style.display = "flex";
 
-  //document.getElementById('logo').src = '/img/MBT Logo Light Klein Pre.svg';
+function setNav() {
+  const div = document.getElementById('nav');
+  const hatOverflow = div.scrollWidth > div.clientWidth;
 
-} else {
-  console.log('Kein Overflow vorhanden.');
-  overflow = false;
+  if (hatOverflow) {
+    console.log('Der Inhalt hat Overflow.');
+    overflow = true;
 
-  document.getElementById('mobile_nav').style.display = "none";
-  document.getElementById('menu_button').style.display = "none";
+    document.getElementById('nav_ul').querySelectorAll('li').forEach(child => {
+      child.remove();
+    });
+    document.getElementById('nav_ul').querySelectorAll('img').forEach(child => {
+      child.remove();
+    });
+    document.getElementById('mobile_nav').style.display = "auto";
+    document.getElementById('menu_button').style.display = "flex";
+
+    //document.getElementById('logo').src = '/img/MBT Logo Light Klein Pre.svg';
+
+  } else {
+    console.log('Kein Overflow vorhanden.');
+    overflow = false;
+
+    document.getElementById('mobile_nav').style.display = "none";
+    document.getElementById('menu_button').style.display = "none";
+
+  }
+  width();
 }
 
-width();
 
+setNav();
+window.addEventListener("resize", setNav);
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
@@ -77,40 +85,28 @@ window.onscroll = function () {
   width();
 }
 
-function width(){
+function width() {
   console.log(window.innerWidth);
   if (window.innerWidth < 1440) {
-    document.getElementById("profile_div_text").style.width = "0";
-    document.getElementById("profile_div_text").style.margin = "0";
-    document.getElementById("profile_div_text").style.display = "none";
-    document.getElementById("profile_div_text").style.opacity = "0";
     document.getElementById("contact_text").style.display = "none";
     document.getElementById("contact_link_svg").style.marginRight = "0";
     document.getElementById("contact_link").style.padding = "10px 10px";
-  }
-  if (window.innerWidth > 1240) {
-    document.getElementById("profile_div_text").style.width = "auto";
-    document.getElementById("profile_div_text").style.margin = "0 20px 0 10px";
-    document.getElementById("profile_div_text").style.display = "block";
-    document.getElementById("profile_div_text").style.opacity = "1";
   }
   if (window.innerWidth > 1440) {
     document.getElementById("contact_text").style.display = "block";
     document.getElementById("contact_link_svg").style.marginRight = "10";
     document.getElementById("contact_link").style.padding = "10px 15px";
   }
-  document.getElementById("profile_div_text").style.display = "none";
-  document.getElementById("login_div").style.display = "none";
 }
 
 window_url = window.location.pathname.split("/")[1];
-if(window_url == ""){
+if (window_url == "") {
   window_url = "home";
 }
 
 var lis = document.getElementById("header").getElementsByTagName("li");
 for (let i = 0; i < lis.length; i++) {
-  if(lis[i].id == window_url){
+  if (lis[i].id == window_url) {
     document.getElementById(lis[i].id).classList.add("select_link");
   }
   document.getElementById(lis[i].id).addEventListener("click", function () {
@@ -122,19 +118,19 @@ for (let i = 0; i < lis.length; i++) {
   });
 }
 
-function open_menu(){
+function open_menu() {
   document.getElementById('mobile_nav').style.opacity = 1;
   var lis = document.getElementsByTagName("li");
   var height = 42 * lis.length;
-  document.getElementById('mobile_nav').style.height = height.toString()+"px";
+  document.getElementById('mobile_nav').style.height = height.toString() + "px";
 }
-function close_menu(){
+function close_menu() {
   document.getElementById('mobile_nav').style.opacity = 0;
   document.getElementById('mobile_nav').style.height = 0;
 }
 
 document.getElementById("menu_button").addEventListener("click", function () {
-  if(!menu_open){
+  if (!menu_open) {
     open_menu();
     document.getElementById('menu_button').classList.add("menu_div_checked");
     menu_open = true;
