@@ -35,7 +35,6 @@ function setNav() {
 
 
 setNav();
-window.addEventListener("resize", setNav);
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {

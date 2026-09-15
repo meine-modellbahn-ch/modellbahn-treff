@@ -5,30 +5,35 @@
     flex-direction: column;
     border-radius: 20px;
     margin-bottom: 50px;
-    height: 570px;
+    height: 670px;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
 }
-.phone_control{
+.phone_controll_image_kids{
+    height: 360px;
+    width: calc(40% - 20px);
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    object-position: 100% 0%;
+}
+.text_phone_control{
     background-color: var(--dark_blue);
-    height: 250px;
+    display: flex;
+    height: 250px !important;
     border-radius: 20px;
     padding: 20px 50px 20px 20px;
-    display: flex;
-    align-items: end;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
     margin-top: 200px;
     width: calc(100% - 70px);
+    margin: 0;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    color: white;
 }
 .phone_info_titel{
     margin-left: 20px;
     font-size: 50px;
-}
-.text_phone_control{
-    margin: 0 100px 0 10px;
-    height: 100%;
-    font-family: "Roboto", sans-serif;
-    color: white;
 }
 .text_phone_control h1{
     margin: 0 0 0 0;
@@ -43,8 +48,14 @@
     color: white;
     text-decoration: underline;
 }
-.phone_control img{
-    width: 20%;
+.rail_pilot_div{
+    display: flex;
+    width: 400px;
+    align-items: flex-end;
+}
+.railpilot_mokeup{
+    width: 100%;
+    height: 450px;
     max-height: 450px;
     filter: drop-shadow(0 20px 20px var(--dark_blue_50));
     z-index: 1;
@@ -94,8 +105,8 @@
 .text_img_left{
     width: 100%;
     display: flex;
+    align-items: stretch;
     background-color: var(--dark_blue_50);
-    height: 500px;
     border-radius: 20px;
     margin-bottom: 50px;
 }
@@ -110,9 +121,9 @@
     justify-content: space-between;
 }
 .text_img_left img, .text_img_right img{
-    height: 100%;
-    aspect-ratio: 4/3;
-    object-fit: contain;
+    height: auto;
+    width: 40%;
+    object-fit: cover;
 }
 .text_img_right img{
     border-radius: 0 20px 20px 0;
@@ -245,6 +256,9 @@
         font-size: 30px;
         font-weight: 700;
     }
+    .phone_info{
+        height: auto;
+    }
     .phone_control{
         height: auto;
     }
@@ -254,14 +268,11 @@
     }
     .text_phone_control{
         margin-right: 20px;
+        height: auto !important;
     }
     .text_phone_control h1{
         font-size: 30px;
     }
-    .railpilot_logo{
-        display: none;
-    }
-
     .schnupper_formular .row{
         flex-direction: column;
     }
@@ -273,6 +284,14 @@
     }
     .input_label_div input{
         width: 100%;
+    }
+    .rail_pilot_div{
+        display: none;
+    }
+    .phone_controll_image_kids{
+        width: calc(100% - 20px);
+        object-fit: cover;
+        object-position: 100% 0%;
     }
 }
 /* Tablet */
@@ -311,6 +330,14 @@
     .schnupper_formular textarea{
         width: calc(100% - 20px);
     }
+    .rail_pilot_div{
+        display: none;
+    }
+    .phone_controll_image_kids{
+        width: calc(100% - 20px);
+        object-fit: cover;
+        object-position: 100% 0%;
+    }
 }
 /* Small Laptop */
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -323,8 +350,5 @@
         margin: 0 0 0 0;
         font-size: 30px;
         font-weight: 700;
-    }
-    .phone_info{
-        height: 450px;
     }
 }

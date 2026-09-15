@@ -1,22 +1,40 @@
 var presse_type = "Team";
 
+const params = new URLSearchParams(window.location.search);
+
+window.addEventListener('load', () => {
+    if (new URLSearchParams(location.search).has('history')) {
+        set_presse_type('Geschichte');
+
+        const element = document.querySelector('#select_team_geschichte_div');
+        if (element) {
+            const top = element.getBoundingClientRect().top + window.scrollY - 120;
+
+            window.scrollTo({
+                top,
+                behavior: 'smooth'
+            });
+        }
+    }
+});
+
 var presse_lis = document.getElementById("select_team_geschichte_div").getElementsByClassName("team_geschichte_p");
 for (let i = 0; i < presse_lis.length; i++) {
     console.log(presse_lis[i]);
-    if(presse_lis[i].id == presse_type){
-      document.getElementById(presse_lis[i].id).classList.add("select_team_geschichte_type");
-      if(presse_type == "Team"){
-        $("#team_geschichte_div").load("team.html");
+    if (presse_lis[i].id == presse_type) {
+        document.getElementById(presse_lis[i].id).classList.add("select_team_geschichte_type");
+        if (presse_type == "Team") {
+            $("#team_geschichte_div").load("team.html");
         }
-        if(presse_type == "Geschichte"){
+        if (presse_type == "Geschichte") {
             $("#team_geschichte_div").load("geschichte.html");
         }
     }
     document.getElementById(presse_lis[i].id).addEventListener("click", function () {
-      set_presse_type(presse_lis[i].id);
+        set_presse_type(presse_lis[i].id);
     });
 }
-function set_presse_type(id){
+function set_presse_type(id) {
     presse_type = id;
     console.log(presse_type);
     for (let i = 0; i < presse_lis.length; i++) {
@@ -24,10 +42,10 @@ function set_presse_type(id){
     }
     document.getElementById(id).classList.add("select_team_geschichte_type");
 
-    if(presse_type == "Team"){
+    if (presse_type == "Team") {
         $("#team_geschichte_div").load("team.html");
     }
-    if(presse_type == "Geschichte"){
+    if (presse_type == "Geschichte") {
         $("#team_geschichte_div").load("geschichte.html");
     }
 }
