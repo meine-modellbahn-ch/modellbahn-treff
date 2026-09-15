@@ -27,6 +27,7 @@
 }
 .gleisplan_img{
     width: 100%;
+    height: auto;
 }
 /* Handy */
 @media (max-width: 767px) {

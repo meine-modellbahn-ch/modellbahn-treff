@@ -62,6 +62,23 @@ h1{
 }
 .gallery-img{
     width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.gallery-div{
+    width: 100%;
+    margin-bottom: -50px;
+}
+.gallery-title{
+    height: 50px;
+    background-color: var(--dark_blue);
+    transform: translateY(-50px);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 .gallery-img:hover{
     cursor: pointer;
@@ -78,15 +95,42 @@ h1{
     align-items: center;
     z-index: 100;
 }
-.img-window img{
+.img-window img {
     max-width: 80vw;
     max-height: 80vh;
-    overflow-y: hidden;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
-.change-btn{
+.img-window-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80vw;
+    max-height: 90vh;
+}
+.img-window-title {
     color: white;
-    zoom: 2;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    margin: 15px 0 0;
+    max-width: 100%;
+}
+.change-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 10px;
+    padding: 10px;
+}
+
+.change-btn svg {
+    width: 40px;
+    height: 40px;
+}
+.change-btn:hover {
+    cursor: pointer;
 }
 .close-btn{
     position: fixed;
@@ -167,6 +211,19 @@ h1{
 @media (max-width: 767px) {
     .gallery{
         grid-template-columns: auto;
+    }
+    .change-btn {
+        margin: 5px;
+        padding: 5px;
+    }
+    .change-btn svg {
+        width: 24px;
+        height: 24px;
+    }
+    .change-btn:first-child{
+        margin-left: 12px;
+        padding-right: 0;
+        margin-right: 5px;
     }
     .galerie_yt_div{
         flex-direction: column;
