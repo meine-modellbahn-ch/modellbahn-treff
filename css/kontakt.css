@@ -33,7 +33,7 @@
     align-items: center;
     padding: 5px;
 }
-.contact_icon_text_div:first-child{
+.contact_icon_text_div:first-child, .contact_icon_text_div:last-child{
     align-items: flex-start;
 }
 .contact_icon_text_div svg{

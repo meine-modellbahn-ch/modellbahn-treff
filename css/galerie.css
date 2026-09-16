@@ -57,12 +57,12 @@ h1{
 .gallery{
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: calc(33%) calc(33%) calc(33%);
     gap: 10px;
 }
 .gallery-img{
     width: 100%;
-    height: 500px;
+    max-height: 500px;
     object-fit: cover;
 }
 .gallery-div{
@@ -79,6 +79,7 @@ h1{
     justify-content: center;
     color: white;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 .gallery-img:hover{
     cursor: pointer;
