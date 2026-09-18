@@ -6,4 +6,4 @@ Disallow: /admin/
 Disallow: /private/
 
 # Specify sitemap location
-Sitemap: https://www.modellbahn-treff.ch/sitemap.xml
+Sitemap: https://mbt-pre.meine-modellbahn.ch/sitemap.xml
