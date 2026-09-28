@@ -17,9 +17,10 @@
 }
 .fact_icon{
     padding-top: 10px;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     fill: black;
+    margin: 10px;
 }
 .fact_text{
     font-family: "Roboto", sans-serif;
